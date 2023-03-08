@@ -6,9 +6,76 @@
 
 body {
     font-family: 'Dosis', sans-serif;
+    padding: 30px;
 }
 
 .container {
     max-width: 1000px;
     margin: auto;
 }
+
+.titolo-principale {
+    color: #E5316F;
+    margin-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.sotto-testo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clearfix::after { /* modificato con correzione */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.carte { /* modificato con correzione */
+    margin-inline: -1rem;
+}
+
+.tessera {
+    float: left;
+    margin: 1.5rem 1rem; /* modificato con correzione */ 
+    width: calc(100% / 3 - 2 * 1rem); 
+    min-width: 280px; 
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px black;  /* modificato con correzione */ 
+}
+
+.tessera:hover { /* modificato con correzione */ 
+    cursor: pointer;
+    box-shadow: 0px 0px 20px salmon;
+}
+
+.tessera img {
+    float: left;
+    margin-right: 1rem;
+    height: 100px;
+    width: 100px;
+}
+
+.tessera .nome {
+    font-size: 1.3rem;
+    font-weight: bold; 
+    margin-top: 0.5rem;  
+    margin-bottom: 0.3rem; 
+}
+
+.tessera .lavoro {
+    margin-bottom: 0.3rem;
+}
+
+.tessera .email {
+    text-decoration: none;
+    color: aqua;
+}
+
+.tessera .email:hover { /* modificato con correzione */ 
+    color: red;
+    text-decoration: underline;
+}
+
